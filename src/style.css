@@ -90,20 +90,21 @@ body {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.9rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    width: 200px;
   }
 
   .secondary-btn {
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     background: none;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -111,6 +112,7 @@ body {
     justify-content: center;
     gap: 0.5rem;
     cursor: pointer;
+    width: 150px;
     transition: background-color 0.5s, color 0.5s;
   }
 
@@ -123,5 +125,20 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
   }
 }

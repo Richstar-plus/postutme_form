@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Hero } from "../components/Hero";
 
 function HomePage() {
   return (
@@ -27,6 +28,9 @@ function HomePage() {
           </Button>
           <Button title="Check Status" className="secondary-btn" />
         </div>
+      </section>
+      <section className="card">
+        <Hero />
       </section>
     </>
   );
