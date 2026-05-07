@@ -135,10 +135,40 @@ body {
     align-items: center;
   }
 
+  .hero-slideshow {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
   .hero-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 15s infinite;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide-1 {
+    animation-delay: 0s;
+  }
+
+  .slide-2 {
+    animation-delay: 5s;
+  }
+
+  .slide-3 {
+    animation-delay: 10s;
+  }
+
+  @keyframes fade {
+    0% { opacity: 0; }
+    10%, 33% { opacity: 1; }
+    43%, 100% { opacity: 0; }
   }
 }
