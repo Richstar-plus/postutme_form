@@ -113,7 +113,9 @@ body {
     gap: 0.5rem;
     cursor: pointer;
     width: 150px;
-    transition: background-color 0.5s, color 0.5s;
+    transition:
+      background-color 0.5s,
+      color 0.5s;
   }
 
   .secondary-btn:hover {
@@ -167,8 +169,16 @@ body {
   }
 
   @keyframes fade {
-    0% { opacity: 0; }
-    10%, 33% { opacity: 1; }
-    43%, 100% { opacity: 0; }
+    0% {
+      opacity: 0;
+    }
+    10%,
+    33% {
+      opacity: 1;
+    }
+    43%,
+    100% {
+      opacity: 0;
+    }
   }
 }
