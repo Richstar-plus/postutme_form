@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function NotFound() {
+function ErrorPage() {
   return (
     <section className="card">
       <h2>Page not found</h2>
@@ -12,4 +12,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default ErrorPage;

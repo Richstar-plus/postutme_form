@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function About() {
+function AboutPage() {
   return (
     <section className="card">
       <h2>About</h2>
@@ -15,4 +15,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;

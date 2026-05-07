@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Home() {
+function HomePage() {
   return (
     <section className="card">
       <h2>Home</h2>
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
