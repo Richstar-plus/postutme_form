@@ -4,17 +4,14 @@ import { faHouse, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 export function Header() {
   return (
     <header className="site-header">
-      <div>
-        <h1>PostUtme</h1>
-        <p>React + Vite starter with routing and FontAwesome.</p>
+      <div className="logo">
+        <FontAwesomeIcon icon={faHouse} className="logo-icon" />
+        <h1>Post-UTME Portal</h1>
       </div>
-      <nav className="site-nav">
-        <NavLink end to="/" className="nav-link">
-          <FontAwesomeIcon icon={faHouse} /> Home
-        </NavLink>
-        <NavLink to="/about" className="nav-link">
-          <FontAwesomeIcon icon={faCircleInfo} /> About
-        </NavLink>
+      <nav>
+        <div className="hamburger">
+          <button className="hamburger-btn">☰</button>
+        </div>
       </nav>
     </header>
   );
