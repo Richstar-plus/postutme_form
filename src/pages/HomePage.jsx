@@ -5,6 +5,7 @@ import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { Hero } from "../components/Hero";
 import { CardInfo } from "../components/CardInfo";
 import { Date } from "../components/Date";
+import { Support } from "../components/Support";
 
 function HomePage() {
   return (
@@ -36,6 +37,8 @@ function HomePage() {
       </section>
       <section className="card">
         <CardInfo />
+      </section>
+      <section className="card">
         <div className="date">
           <h3>
             <FontAwesomeIcon icon={faCalendar} /> Key Dates
@@ -51,6 +54,9 @@ function HomePage() {
             registrationEnd="August 15"
           />
         </div>
+      </section>
+      <section className="card">
+        <Support />
       </section>
     </>
   );

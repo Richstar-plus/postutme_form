@@ -272,9 +272,7 @@ body {
   }
 
   .date {
-    margin: 1rem 0;
     border: 1px solid rgba(1, 2, 51, 0.26);
-    
   }
 
   .date h3 {
@@ -319,5 +317,39 @@ body {
   .date-content-item-details {
     font-size: 14px;
     color: rgba(16, 16, 56, 0.726);
+  }
+
+  .support {
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid rgba(1, 2, 51, 0.26);
+  }
+
+  .support h3 {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  .support p {
+    padding: 1rem 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #303030;
+  }
+
+  .support-details {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .support-details li, .support-details li a {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--secondary-color);
   }
 }
