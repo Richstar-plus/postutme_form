@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button } from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -27,9 +27,11 @@ function HomePage() {
       </section>
       <section className="card">
         <div className="main-button">
-          <Button title="Start Application" className="primary-btn">
-            <FontAwesomeIcon icon={faArrowRight} className="button-icon" />
-          </Button>
+          <NavLink to='/post-utme'>
+            <Button title="Start Application" className="primary-btn">
+              <FontAwesomeIcon icon={faArrowRight} className="button-icon" />
+            </Button>
+          </NavLink>
           <Button title="Check Status" className="secondary-btn" />
         </div>
       </section>

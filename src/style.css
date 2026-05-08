@@ -11,11 +11,17 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
   padding-top: 60px;
 }
+
+
 
 /* Mobile */
 @media (min-width: 320px) {
@@ -61,6 +67,8 @@ body {
     background: none;
     cursor: pointer;
   }
+
+  /* Home styling --------------------------------------- */
 
   .card {
     border-radius: 8px;
@@ -381,6 +389,8 @@ body {
     padding: 1rem 0;
     margin-top: 3rem;
     border-top: 1px solid #b3b3b3;
+    position: absolute;
+    background-color: var(--background-color);
   }
 
   .footer-header {

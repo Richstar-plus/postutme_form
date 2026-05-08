@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { RootLayout } from "./pages/Root";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import { FormPage } from "./pages/FormPage";
 import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
@@ -15,9 +15,9 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/about",
-        element: <AboutPage />,
-      }
+        path: "/post-utme",
+        element: <FormPage />,
+      },
     ],
   },
 ]);
