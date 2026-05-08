@@ -6,6 +6,7 @@ import { Hero } from "../components/Hero";
 import { CardInfo } from "../components/CardInfo";
 import { Date } from "../components/Date";
 import { Support } from "../components/Support";
+import { Comment } from "../components/Comment";
 
 function HomePage() {
   return (
@@ -57,6 +58,9 @@ function HomePage() {
       </section>
       <section className="card">
         <Support />
+      </section>
+      <section className="card">
+        <Comment />
       </section>
     </>
   );
