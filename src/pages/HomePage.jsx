@@ -1,4 +1,3 @@
-
 import { Button } from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +7,6 @@ import { Date } from "../components/Date";
 import { Support } from "../components/Support";
 import { Comment } from "../components/Comment";
 import { useState } from "react";
-
 
 function HomePage() {
   const [showRegistration, setShowRegistration] = useState(false);
@@ -32,15 +30,23 @@ function HomePage() {
           university.
         </p>
       </section>
-      <section className={`card application-btn ${showRegistration ? 'hidden' : ''}`}>
+      <section
+        className={`card application-btn ${showRegistration ? "hidden" : ""}`}
+      >
         <div className="main-button">
-          <Button title="Start Application" className="primary-btn" onClick={handleButtonSwitch}>
+          <Button
+            title="Start Application"
+            className="primary-btn"
+            onClick={handleButtonSwitch}
+          >
             <FontAwesomeIcon icon={faArrowRight} className="button-icon" />
           </Button>
           <Button title="Check Status" className="secondary-btn" />
         </div>
       </section>
-      <section className={`card registration-input ${showRegistration ? '' : 'hidden'}`}>
+      <section
+        className={`card registration-input ${showRegistration ? "" : "hidden"}`}
+      >
         <form action="">
           <input type="text" placeholder="Enter JAMB Registration Number" />
           <Button title="Submit" />
