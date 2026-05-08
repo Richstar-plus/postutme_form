@@ -21,8 +21,6 @@ body {
   padding-top: 60px;
 }
 
-
-
 /* Mobile */
 @media (min-width: 320px) {
   /* header styles for mobile ----------- */
@@ -389,8 +387,7 @@ body {
     padding: 1rem 0;
     margin-top: 3rem;
     border-top: 1px solid #b3b3b3;
-    position: absolute;
-    background-color: var(--background-color);
+    background: var(--background-color);
   }
 
   .footer-header {
