@@ -5,13 +5,17 @@ import { Footer } from "../components/Footer";
 export function RootLayout() {
   // const navigation = useNavigation();
   return (
-    <div>
-      <Header />
-      <main>
+    <div className="app-container">
+      <header className="app-header">
+        <Header />
+      </header>
+      <main className="app-main">
         {/* {navigation.state === "loading" && <p>Loading...</p>} */}
         <Outlet />
       </main>
-      <Footer />
+      <footer className="app-footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

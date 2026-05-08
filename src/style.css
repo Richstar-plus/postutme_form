@@ -11,14 +11,43 @@
   margin: 0;
 }
 
-a {
-  text-decoration: none;
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  flex-shrink: 0;
+}
+
+.app-main {
+  flex: 1;
   padding-top: 60px;
+}
+
+.app-footer {
+  flex-shrink: 0;
 }
 
 /* Mobile */
