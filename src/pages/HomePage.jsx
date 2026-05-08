@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { Hero } from "../components/Hero";
 import { CardInfo } from "../components/CardInfo";
+import { Date } from "../components/Date";
 
 function HomePage() {
   return (
@@ -35,6 +36,21 @@ function HomePage() {
       </section>
       <section className="card">
         <CardInfo />
+        <div className="date">
+          <h3>
+            <FontAwesomeIcon icon={faCalendar} /> Key Dates
+          </h3>
+          <Date
+            school="Ignatius Ajuru University of Education"
+            registrationStart="August 1"
+            registrationEnd="August 31"
+          />
+          <Date
+            school="Rivers State University"
+            registrationStart="July 15"
+            registrationEnd="August 15"
+          />
+        </div>
       </section>
     </>
   );
