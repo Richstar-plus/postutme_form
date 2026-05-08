@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import { Button } from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -7,8 +7,15 @@ import { CardInfo } from "../components/CardInfo";
 import { Date } from "../components/Date";
 import { Support } from "../components/Support";
 import { Comment } from "../components/Comment";
+import { useState } from "react";
+
 
 function HomePage() {
+  const [showRegistration, setShowRegistration] = useState(false);
+
+  function handleButtonSwitch() {
+    setShowRegistration(true);
+  }
   return (
     <>
       <section className="card">
@@ -25,15 +32,19 @@ function HomePage() {
           university.
         </p>
       </section>
-      <section className="card">
+      <section className={`card application-btn ${showRegistration ? 'hidden' : ''}`}>
         <div className="main-button">
-          <NavLink to='/post-utme'>
-            <Button title="Start Application" className="primary-btn">
-              <FontAwesomeIcon icon={faArrowRight} className="button-icon" />
-            </Button>
-          </NavLink>
+          <Button title="Start Application" className="primary-btn" onClick={handleButtonSwitch}>
+            <FontAwesomeIcon icon={faArrowRight} className="button-icon" />
+          </Button>
           <Button title="Check Status" className="secondary-btn" />
         </div>
+      </section>
+      <section className={`card registration-input ${showRegistration ? '' : 'hidden'}`}>
+        <form action="">
+          <input type="text" placeholder="Enter JAMB Registration Number" />
+          <Button title="Submit" />
+        </form>
       </section>
       <section className="card">
         <Hero />

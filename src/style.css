@@ -50,6 +50,10 @@ a {
   flex-shrink: 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Mobile */
 @media (min-width: 320px) {
   /* header styles for mobile ----------- */
@@ -215,6 +219,39 @@ a {
     100% {
       opacity: 0;
     }
+  }
+
+  .registration-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registration-input form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+  }
+
+  .registration-input form input {
+    padding: 10px;
+    font-size: 14px;
+    color: #6e6d6d;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .registration-input form button {
+    padding: 10px;
+    font-size: 14px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
   }
 
   .card-info {

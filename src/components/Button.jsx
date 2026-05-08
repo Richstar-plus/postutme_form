@@ -1,6 +1,6 @@
-export function Button({ title, children, className }) {
+export function Button({ title, children, className, onClick }) {
   return (
-    <button className={`${className || ''}`}>
+    <button className={`${className || ""}`} onClick={onClick}>
       {title} {children}
     </button>
   );
