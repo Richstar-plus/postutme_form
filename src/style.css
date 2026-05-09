@@ -475,4 +475,64 @@ a {
     font-size: 12px;
     color: #9e9b9b;
   }
+
+  .form-nav {
+    display: flex;
+  }
+
+  .form-nav .nav-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+  }
+
+  .nav-pass {
+    background: var(--accent-color) !important;
+  }
+
+  .line {
+    height: 3px;
+    width: 40px;
+    background: #30303052;
+    align-self: center;
+  }
+
+  .nav-card .nav-num-card {
+    padding: 5px;
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff9900b0;
+    color: #5c3f02;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+  }
+
+  .idle-card {
+    background: #30303052 !important;
+    border: none !important;
+    color: var(--secondary-color) !important;
+  }
+
+  .nav-idle-title {
+    color: #444343 !important;
+  }
+
+  .nav-title {
+    font-size: 14px;
+    width: 65px;
+    text-align: center;
+    color: #5c3f02;
+  }
 }
