@@ -40,11 +40,7 @@ export function PersonalInfo() {
               type="text"
               inputType="input"
             />
-            <FormInput
-              title="Date of birth"
-              type="date"
-              inputType="dob"
-            />
+            <FormInput title="Date of birth" type="date" inputType="dob" />
           </div>
         </form>
       </div>

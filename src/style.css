@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 :root {
   --primary-color: #041649;
   --secondary-color: #010f2e;
@@ -19,7 +19,7 @@ body,
 }
 
 body {
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   background-color: var(--background-color);
 }
 
@@ -568,7 +568,8 @@ a {
     color: var(--secondary-color);
   }
 
-  .form-input input, .form-input select {
+  .form-input input,
+  .form-input select {
     margin: 0.5rem 0;
     width: 100%;
     padding: 10px;
