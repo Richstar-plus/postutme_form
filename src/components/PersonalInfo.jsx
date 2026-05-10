@@ -41,6 +41,45 @@ export function PersonalInfo() {
               inputType="input"
             />
             <FormInput title="Date of birth" type="date" inputType="dob" />
+            <FormInput
+              title="Email Address"
+              placeholder="Enter your Email Address"
+              type="email"
+              inputType="input"
+            />
+            <FormInput
+              title="Phone Number"
+              placeholder="Enter your Phone Number"
+              type="number"
+              inputType="input"
+            />
+            <FormInput
+              title="O'Level"
+              placeholder="Enter your Qualification"
+              type="text"
+            />
+            <FormInput
+              title="State of Origin"
+              placeholder="Enter your State of Origin"
+              type="text"
+            />
+            <FormInput
+              title="L.G.A"
+              placeholder="Enter your L.G.A"
+              type="text"
+            />
+            <FormInput
+              title="House Address"
+              placeholder="Enter your House Address"
+              type="text"
+              inputType="input"
+            />
+            <FormInput
+              title="Place of Birth"
+              placeholder="Enter your Place of Birth"
+              type="text"
+              inputType="input"
+            />
           </div>
         </form>
       </div>
