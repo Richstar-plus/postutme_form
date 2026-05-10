@@ -578,6 +578,18 @@ a {
     background: #d6d6d636;
   }
 
+  .dob-fields {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .dob-fields input {
+    margin: 0;
+    width: 100%;
+  }
+
   .form-input input:focus {
     outline: 1px solid var(--accent-color);
   }

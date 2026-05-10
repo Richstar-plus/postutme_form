@@ -42,9 +42,8 @@ export function PersonalInfo() {
             />
             <FormInput
               title="Date of birth"
-              placeholder="Example. Computer Science"
               type="date"
-              inputType="input"
+              inputType="dob"
             />
           </div>
         </form>
