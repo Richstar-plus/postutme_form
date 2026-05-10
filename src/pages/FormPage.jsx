@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PersonalInfo } from "../components/PersonalInfo";
+import { Ads } from "../components/Ads";
 
 export function FormPage() {
   return (
@@ -33,6 +34,7 @@ export function FormPage() {
         </div>
       </section>
       <PersonalInfo />
+      <Ads />
 
     </div>
   );
