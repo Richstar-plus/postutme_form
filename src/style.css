@@ -652,7 +652,7 @@ a {
 
   .caution h3 {
     margin: 10px 0;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 18px;
   }
 
@@ -667,4 +667,24 @@ a {
     color: #5e5d5d;
   }
 
+  .form-button {
+    padding: 1rem;
+    border-top: 1px solid rgba(1, 2, 51, 0.26);
+  }
+
+  .form-main-btn {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
 }
