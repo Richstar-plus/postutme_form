@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { PersonalInfo } from "../components/PersonalInfo";
 
 export function FormPage() {
   return (
@@ -31,6 +32,8 @@ export function FormPage() {
           </div>
         </div>
       </section>
+      <PersonalInfo />
+
     </div>
   );
 }
