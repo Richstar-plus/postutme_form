@@ -15,12 +15,22 @@ export function FormProgress() {
           <div className="nav-num-card ">2</div>
           <div className="nav-title">Documents</div>
         </div>
+
         <div className="nav-line">
           <div className="line"></div>
         </div>
 
         <div className="nav-card">
           <div className="nav-num-card idle-card">3</div>
+          <div className="nav-title nav-idle-title">Payment</div>
+        </div>
+
+        <div className="nav-line">
+          <div className="line"></div>
+        </div>
+
+        <div className="nav-card">
+          <div className="nav-num-card idle-card">4</div>
           <div className="nav-title nav-idle-title">Review</div>
         </div>
       </div>
