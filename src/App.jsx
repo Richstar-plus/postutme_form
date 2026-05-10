@@ -24,24 +24,23 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <FormPage />
+            element: <FormPage />,
           },
           {
             path: "payment",
-            element: <PaymentPage />
+            element: <PaymentPage />,
           },
           {
             path: "review",
-            element: <ReviewPage />
+            element: <ReviewPage />,
           },
           {
-            path: ':id',
-            id: 'first-sitting-id',
-            element: <FirstSitting />
-          }
-        ]
+            path: ":id",
+            id: "first-sitting-id",
+            element: <FirstSitting />,
+          },
+        ],
       },
-      
     ],
   },
 ]);

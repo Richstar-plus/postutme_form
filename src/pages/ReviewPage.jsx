@@ -45,7 +45,8 @@ export function ReviewPage() {
         <div className="review-summary">
           <h1 className="result-heading">Application Review</h1>
           <p className="review-intro">
-            Confirm every detail before final submission. This preview includes your personal information, uploaded documents, and payment summary.
+            Confirm every detail before final submission. This preview includes
+            your personal information, uploaded documents, and payment summary.
           </p>
 
           <div className="review-section">
@@ -91,7 +92,8 @@ export function ReviewPage() {
             <span>Passport Preview</span>
           </div>
           <p className="preview-note">
-            Your passport appears here once uploaded. Confirm the image is clear and shows your full face.
+            Your passport appears here once uploaded. Confirm the image is clear
+            and shows your full face.
           </p>
         </aside>
       </section>

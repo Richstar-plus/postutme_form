@@ -1,12 +1,7 @@
 import { Fragment } from "react";
 
 export function FormProgress({ currentStep = 1 }) {
-  const steps = [
-    "Personal Info",
-    "Documents",
-    "Payment",
-    "Review",
-  ];
+  const steps = ["Personal Info", "Documents", "Payment", "Review"];
 
   return (
     <section className="card">
@@ -18,8 +13,8 @@ export function FormProgress({ currentStep = 1 }) {
           const cardClass = isActive
             ? "active-card"
             : isCompleted
-            ? "completed-card"
-            : "idle-card";
+              ? "completed-card"
+              : "idle-card";
           const titleClass = isActive || isCompleted ? "" : "nav-idle-title";
 
           return (
