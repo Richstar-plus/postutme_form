@@ -586,12 +586,14 @@ a {
     margin-top: 0.5rem;
   }
 
-  .dob-fields input {
+  .dob-fields input,
+  .dob-fields select {
     margin: 0;
     width: 100%;
   }
 
-  .form-input input:focus {
+  .form-input input:focus,
+  .form-input select:focus {
     outline: 1px solid var(--accent-color);
   }
 }

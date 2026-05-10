@@ -24,7 +24,13 @@ export function FormInput({ title, placeholder, type, inputType }) {
       <label>{title}</label>
       {inputType === "dob" ? (
         <div className="dob-fields">
-          <input type="number" min="1" max="31" placeholder="DD" />
+          <input
+            type="number"
+            min="1"
+            max="31"
+            placeholder="DD"
+            inputMode="numeric"
+          />
           <select name="month">
             <option value="">Month</option>
             {monthNames.map((month, idx) => (
