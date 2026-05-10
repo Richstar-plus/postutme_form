@@ -558,7 +558,7 @@ a {
 
   .review-grid {
     display: grid;
-    grid-template-columns: 1.8fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
@@ -585,8 +585,8 @@ a {
 
   .review-field {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
     background: #f8f7f6;
     padding: 0.95rem 1rem;
     border-radius: 8px;
@@ -596,11 +596,13 @@ a {
   .review-field-label {
     color: #5c3f02;
     font-weight: 600;
+    font-size: 14px;
   }
 
   .review-field-value {
     color: #333;
-    text-align: right;
+    text-align: left;
+    word-break: break-word;
   }
 
   .review-preview-card {
@@ -616,7 +618,7 @@ a {
   }
 
   .passport-preview {
-    min-height: 240px;
+    min-height: 200px;
     border: 1px dashed rgba(92, 63, 2, 0.5);
     border-radius: 10px;
     display: flex;
@@ -625,6 +627,7 @@ a {
     background: #fff;
     color: #8a7a4a;
     font-weight: 600;
+    font-size: 14px;
   }
 
   .preview-note {
@@ -641,6 +644,43 @@ a {
 
   .review-actions-card {
     padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .review-grid {
+      grid-template-columns: 1.8fr 1fr;
+    }
+
+    .review-field {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .review-field-value {
+      text-align: right;
+    }
+
+    .passport-preview {
+      min-height: 240px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .review-grid {
+      gap: 2rem;
+    }
+
+    .review-summary {
+      padding: 1.5rem;
+    }
+
+    .review-preview-card {
+      padding: 1.5rem;
+    }
+
+    .review-actions {
+      padding: 1.5rem;
+    }
   }
 
   .form-container {
