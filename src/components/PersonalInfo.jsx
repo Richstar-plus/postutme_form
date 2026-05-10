@@ -80,6 +80,7 @@ export function PersonalInfo() {
             type="text"
             inputType="input"
           />
+          <FormInput title='Passport' type='file' />
         </div>
       </div>
     </section>

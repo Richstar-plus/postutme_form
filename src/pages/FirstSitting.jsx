@@ -11,7 +11,7 @@ export function FirstSitting() {
       </section>
       <FormProgress />
       <section className="card">
-        <h1>O'Level Details</h1>
+        <h1 className="result-heading">O'Level Details</h1>
         <Caution>
           <ul>
             <li>O'level result must be in picture format.</li>
