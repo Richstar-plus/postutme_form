@@ -12,7 +12,7 @@ export function FormPage() {
         <section className="card">
           <p className="card-title">Naija Campus Hub</p>
         </section>
-        <FormProgress />
+        <FormProgress currentStep={1} />
         <PersonalInfo />
         <Ads />
         <Caution>

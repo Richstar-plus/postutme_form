@@ -6,6 +6,7 @@ import ErrorPage from "./pages/ErrorPage";
 import { FormRootLayout } from "./pages/FormRootLayout";
 import { FirstSitting } from "./pages/FirstSitting";
 import { PaymentPage } from "./pages/PaymentPage";
+import { ReviewPage } from "./pages/ReviewPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
           {
             path: "payment",
             element: <PaymentPage />
+          },
+          {
+            path: "review",
+            element: <ReviewPage />
           },
           {
             path: ':id',

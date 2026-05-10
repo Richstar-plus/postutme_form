@@ -9,7 +9,7 @@ export function FirstSitting() {
       <section className="card">
         <p className="card-title">Naija Campus Hub</p>
       </section>
-      <FormProgress />
+      <FormProgress currentStep={2} />
       <section className="card">
         <h1 className="result-heading">O'Level Details</h1>
         <Caution>
