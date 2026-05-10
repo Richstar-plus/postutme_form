@@ -1,7 +1,9 @@
-export function Button({ title, children, className, onClick }) {
+export function Button({ title, children, className, onClick, action }) {
+  const details = <>{title} {children}</>;
+  const prevDetails =  <>{children} {title}</>;
   return (
     <button className={`${className || ""}`} onClick={onClick}>
-      {title} {children}
+      {action === "previous" ? prevDetails : details}
     </button>
   );
 }

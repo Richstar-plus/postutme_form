@@ -3,6 +3,8 @@ import { RootLayout } from "./pages/Root";
 import HomePage from "./pages/HomePage";
 import { FormPage } from "./pages/FormPage";
 import ErrorPage from "./pages/ErrorPage";
+import { FormRootLayout } from "./pages/FormRootLayout";
+import { FirstSitting } from "./pages/FirstSitting";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,18 @@ const router = createBrowserRouter([
       },
       {
         path: "/post-utme",
-        element: <FormPage />,
+        element: <FormRootLayout />,
+        children: [
+          {
+            index: true,
+            element: <FormPage />
+          },
+          {
+            path: ':id',
+            id: 'first-sitting-id',
+            element: <FirstSitting />
+          }
+        ]
       },
       
     ],

@@ -50,6 +50,8 @@ export function FormInput({ title, placeholder, type, inputType }) {
         </div>
       ) : inputType === "input" ? (
         <input type={type} placeholder={placeholder} />
+      ) : type === "file" ? (
+        <input type='file' className="fileInput" />
       ) : (
         <select name={title}>
           <option value="">Select</option>

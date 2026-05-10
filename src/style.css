@@ -686,5 +686,15 @@ a {
     cursor: pointer;
   }
 
+  .prev-button {
+    padding: 0 1rem;
+  }
+
+  .form-prev {
+    background: white;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+
   
 }
