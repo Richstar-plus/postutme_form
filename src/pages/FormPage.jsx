@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { PersonalInfo } from "../components/PersonalInfo";
 import { Ads } from "../components/Ads";
+import { Caution } from "../components/Caution";
 
 export function FormPage() {
   return (
@@ -35,6 +36,7 @@ export function FormPage() {
       </section>
       <PersonalInfo />
       <Ads />
+      <Caution />
 
     </div>
   );

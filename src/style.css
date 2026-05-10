@@ -642,4 +642,29 @@ a {
     left: 0;
     z-index: 1;
   }
+
+  .caution {
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid rgba(1, 2, 51, 0.26);
+    border-radius: 5px;
+  }
+
+  .caution h3 {
+    margin: 10px 0;
+    color: var(--secondary-color);
+    font-size: 18px;
+  }
+
+  .caution ul {
+    margin: 1rem;
+  }
+
+  .caution ul li {
+    text-align: justify;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #5e5d5d;
+  }
+
 }
