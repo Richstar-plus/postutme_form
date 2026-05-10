@@ -5,6 +5,7 @@ import { FormPage } from "./pages/FormPage";
 import ErrorPage from "./pages/ErrorPage";
 import { FormRootLayout } from "./pages/FormRootLayout";
 import { FirstSitting } from "./pages/FirstSitting";
+import { PaymentPage } from "./pages/PaymentPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <FormPage />
+          },
+          {
+            path: "payment",
+            element: <PaymentPage />
           },
           {
             path: ':id',
