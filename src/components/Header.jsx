@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,6 +22,14 @@ const navLinks = [
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActiveLink = (path) => {
+    if (path === "/") {
+      return location.pathname === "/";
+    }
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <header className={`${isMenuOpen ? "open" : ""}`}>
@@ -33,7 +41,7 @@ export function Header() {
           <NavLink
             key={link.path}
             to={link.path}
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            className={() => `nav-link ${isActiveLink(link.path) ? "active" : ""}`}
             onClick={() => setIsMenuOpen(false)}
           >
             {link.name}

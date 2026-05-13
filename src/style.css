@@ -97,6 +97,21 @@ body.menu-open .app-main {
       color: var(--accent-color);
     }
 
+  .mobile-menu .nav-link {
+    color: var(--background-color);
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background: rgba(4, 20, 73, 0.05);
+    transition: background 0.25s ease, color 0.25s ease;
+    font-size: 0.95rem;
+  }
+
+  .mobile-menu .nav-link:hover,
+  .mobile-menu .nav-link.active {
+    background: var(--primary-color);
+    color: var(--accent-color);
+  }
+
   .site-header {
     border-bottom: 1px solid var(--primary-color);
     background-color: var(--background-color);
