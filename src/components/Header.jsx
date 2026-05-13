@@ -41,7 +41,9 @@ export function Header() {
           <NavLink
             key={link.path}
             to={link.path}
-            className={() => `nav-link ${isActiveLink(link.path) ? "active" : ""}`}
+            className={() =>
+              `nav-link ${isActiveLink(link.path) ? "active" : ""}`
+            }
             onClick={() => setIsMenuOpen(false)}
           >
             {link.name}
