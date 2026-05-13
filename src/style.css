@@ -4,6 +4,7 @@
   --secondary-color: #010f2e;
   --accent-color: #c48807;
   --background-color: #f3f4f6;
+  --header-menu-height: 0px;
 }
 
 * {
@@ -45,9 +46,11 @@ a {
 .app-main {
   flex: 1;
   padding-top: 60px;
+  transition: padding-top 0.35s ease;
 }
 
-.app-footer {
+body.menu-open .app-main {
+  padding-top: calc(60px + var(--header-menu-height));
   flex-shrink: 0;
 }
 
@@ -58,6 +61,32 @@ a {
 /* Mobile */
 @media (min-width: 320px) {
   /* header styles for mobile ----------- */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
+  }
+
+  .mobile-menu {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+
+  .mobile-menu a {
+    padding: 0.5rem;
+    color: white;
+    font-size: 13px;
+  }
+
   .site-header {
     border-bottom: 1px solid var(--primary-color);
     background-color: var(--background-color);
@@ -66,11 +95,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
   }
 
   .site-header .logo {
@@ -86,6 +110,13 @@ a {
     font-size: 12px;
   }
 
+  .site-header .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
   .site-header nav .hamburger {
     display: flex;
     justify-content: center;
@@ -93,11 +124,63 @@ a {
   }
 
   .site-header nav .hamburger .hamburger-btn {
-    padding: 0.2rem;
+    padding: 0.35rem 0.5rem;
     font-size: 18px;
-    border: none;
-    background: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background: transparent;
     cursor: pointer;
+    color: var(--primary-color);
+  }
+
+  .site-header .mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0 0.25rem;
+  }
+
+  .site-header.open .mobile-menu {
+    max-height: 480px;
+    opacity: 1;
+    padding-bottom: 0.75rem;
+  }
+
+  .site-header .nav-link {
+    color: var(--primary-color);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    background: rgba(4, 20, 73, 0.05);
+    transition: background 0.25s ease, color 0.25s ease;
+    font-size: 0.95rem;
+  }
+
+  .site-header .nav-link:hover,
+  .site-header .nav-link.active {
+    background: var(--primary-color);
+    color: #fff;
+  }
+
+  .page-content {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .page-content h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+  }
+
+  .page-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.72);
   }
 
   /* Home styling --------------------------------------- */
