@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 export function FormProgress({ currentStep = 1 }) {
-  const steps = ["Personal Info", "Documents", "Payment", "Review"];
+  const steps = ["Personal Info", "Documents", "Review", "Payment"];
 
   return (
     <section className="card">

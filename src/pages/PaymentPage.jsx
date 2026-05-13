@@ -9,7 +9,7 @@ export function PaymentPage() {
       <section className="card">
         <p className="card-title">Naija Campus Hub</p>
       </section>
-      <FormProgress currentStep={3} />
+      <FormProgress currentStep={4} />
       <section className="card">
         <h1 className="result-heading">Payment Details</h1>
         <Caution>

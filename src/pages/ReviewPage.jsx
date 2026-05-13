@@ -40,7 +40,7 @@ export function ReviewPage() {
       <section className="card">
         <p className="card-title">Naija Campus Hub</p>
       </section>
-      <FormProgress currentStep={4} />
+      <FormProgress currentStep={3} />
       <section className="card review-grid">
         <div className="review-summary">
           <h1 className="result-heading">Application Review</h1>
@@ -101,7 +101,7 @@ export function ReviewPage() {
       <section className="card review-actions-card">
         <div className="review-actions">
           <FormButton title="Previous Page" action="previous" />
-          <FormButton title="Submit Application" />
+          <FormButton title="Next: Payment Page" />
         </div>
       </section>
     </>
