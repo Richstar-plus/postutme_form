@@ -54,7 +54,7 @@ export function Header() {
               aria-expanded={isMenuOpen}
               aria-label="Toggle mobile navigation"
             >
-              ☰
+              {isMenuOpen ? "X" : "☰"}
             </button>
           </div>
         </nav>

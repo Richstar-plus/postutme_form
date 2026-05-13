@@ -7,7 +7,6 @@ import { FormRootLayout } from "./pages/FormRootLayout";
 import { FirstSitting } from "./pages/FirstSitting";
 import { PaymentPage } from "./pages/PaymentPage";
 import { ReviewPage } from "./pages/ReviewPage";
-import PostUtmeRegistration from "./pages/PostUtmeRegistration";
 import WaecResultUpload from "./pages/WaecResultUpload";
 import ChangeOfCourseInstitution from "./pages/ChangeOfCourseInstitution";
 import AdmissionStatus from "./pages/AdmissionStatus";
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <HomePage />,
-      },
-      {
-        path: "post-utme-registration",
-        element: <PostUtmeRegistration />,
       },
       {
         path: "waec-result-upload",

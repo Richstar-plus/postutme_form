@@ -88,6 +88,15 @@ body.menu-open .app-main {
     font-size: 13px;
   }
 
+   .mobile-menu a:hover {
+    background-color: #010f2e;
+    color: var(--accent-color);
+   }
+
+    .mobile-menu a:active {
+      color: var(--accent-color);
+    }
+
   .site-header {
     border-bottom: 1px solid var(--primary-color);
     background-color: var(--background-color);
@@ -132,39 +141,6 @@ body.menu-open .app-main {
     background: transparent;
     cursor: pointer;
     color: var(--primary-color);
-  }
-
-  .site-header .mobile-menu {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
-    padding: 0 0.25rem;
-  }
-
-  .site-header.open .mobile-menu {
-    max-height: 480px;
-    opacity: 1;
-    padding-bottom: 0.75rem;
-  }
-
-  .site-header .nav-link {
-    color: var(--primary-color);
-    padding: 0.8rem 1rem;
-    border-radius: 10px;
-    background: rgba(4, 20, 73, 0.05);
-    transition: background 0.25s ease, color 0.25s ease;
-    font-size: 0.95rem;
-  }
-
-  .site-header .nav-link:hover,
-  .site-header .nav-link.active {
-    background: var(--primary-color);
-    color: #fff;
   }
 
   .page-content {
