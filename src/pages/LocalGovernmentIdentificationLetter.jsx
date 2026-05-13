@@ -5,7 +5,8 @@ export default function LocalGovernmentIdentificationLetter() {
     <section className="page-content">
       <h1>Local Government Identification Letter</h1>
       <p>
-        Upload or review your local government identification letter information.
+        Upload or review your local government identification letter
+        information.
       </p>
       <Link className="secondary-btn" to="/">
         Back to Home

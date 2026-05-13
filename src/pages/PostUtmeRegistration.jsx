@@ -5,8 +5,8 @@ export default function PostUtmeRegistration() {
     <section className="page-content">
       <h1>Post UTME Registration</h1>
       <p>
-        This page contains information and the registration form for the Post-UTME
-        application process.
+        This page contains information and the registration form for the
+        Post-UTME application process.
       </p>
       <Link className="secondary-btn" to="/">
         Back to Home
