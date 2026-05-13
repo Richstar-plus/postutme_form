@@ -28,8 +28,8 @@ export function FirstSitting() {
               <FormInput title="WAEC (First Sitting)" type="file" />
               <FormInput title="NECO (Second Sitting)" type="file" />
             </div>
-            <FormButton title="Previous Page" action="previous" />
-            <FormButton title="Next: Payment Page" />
+            <FormButton title="Previous Page" action="previous" type='button' />
+            <FormButton title="Next: Payment Page" type='submit' />
           </form>
         </div>
       </section>

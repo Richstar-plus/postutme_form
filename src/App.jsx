@@ -7,7 +7,7 @@ import { FormRootLayout } from "./pages/FormRootLayout";
 import { FirstSitting } from "./pages/FirstSitting";
 import { PaymentPage } from "./pages/PaymentPage";
 import { ReviewPage } from "./pages/ReviewPage";
-import WaecResultUpload from "./pages/WaecResultUpload";
+import {WaecResultUpload} from "./pages/WaecResultUpload";
 import ChangeOfCourseInstitution from "./pages/ChangeOfCourseInstitution";
 import AdmissionStatus from "./pages/AdmissionStatus";
 import JambAdmissionLetter from "./pages/JambAdmissionLetter";

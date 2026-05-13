@@ -1,16 +1,36 @@
-import { Link } from "react-router-dom";
+import { Caution } from "../components/Caution";
+import { FormButton } from "../components/FormButton";
+import { FormInput } from "../components/FormInput";
 
-export default function WaecResultUpload() {
+export function WaecResultUpload() {
   return (
-    <section className="page-content">
-      <h1>WAEC Result Upload</h1>
-      <p>
-        Upload your WAEC result here so it can be processed as part of your
-        Post-UTME application.
-      </p>
-      <Link className="secondary-btn" to="/">
-        Back to Home
-      </Link>
-    </section>
+    <>
+      <section className="card">
+        <p className="card-title">Naija Campus Hub</p>
+      </section>
+      <section className="card">
+        <h1 className="result-heading">O'Level Result Upload</h1>
+        <Caution>
+          <ul>
+            <li>O'level result must be in picture format.</li>
+            <li>If you await your O'level Result please indicate.</li>
+            <li>
+              If you are combining two (2) O'level Results, make sure you upload
+              the two results.
+            </li>
+          </ul>
+        </Caution>
+        <div className="result">
+          <form action="">
+            <div className="form-actions">
+              <FormInput title="WAEC (First Sitting)" type="file" />
+              <FormInput title="NECO (Second Sitting)" type="file" />
+            </div>
+            <FormButton title="Next: Payment Page" type='submit' />
+          </form>
+        </div>
+      </section>
+    </>
   );
 }
+
