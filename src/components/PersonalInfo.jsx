@@ -16,7 +16,7 @@ export function PersonalInfo() {
             type="text"
             inputType="input"
           />
-          <FormInput title="Gender" />
+          <FormInput title="Gender" select="gender" />
           <FormInput
             title="JAMB Score"
             placeholder="Enter your JAMB Score"
@@ -24,9 +24,10 @@ export function PersonalInfo() {
             inputType="input"
           />
           <FormInput
-            title="First Choice Institution"
+            title="First Choice Institution (As on JAMB Slip)"
             placeholder="University"
             type="text"
+            select="institution"
           />
           <FormInput
             title="First Choice Course of Study (As on JAMB Slip)"
@@ -53,11 +54,15 @@ export function PersonalInfo() {
             type="number"
             inputType="input"
           />
-          <FormInput title="Are you using two O'level Results?" />
+          <FormInput
+            title="Are you using two O'level Results?"
+            select="sitting"
+          />
           <FormInput
             title="O'Level"
             placeholder="Enter your Qualification"
             type="text"
+            select="olevel"
           />
           <FormInput
             title="State of Origin"
@@ -71,16 +76,13 @@ export function PersonalInfo() {
             type="text"
             inputType="input"
           />
-          <FormInput
-            title="Marital Status"
-          />
+          <FormInput title="Marital Status" />
           <FormInput
             title="Place of Birth"
             placeholder="Enter your Place of Birth"
             type="text"
             inputType="input"
           />
-          <FormInput title='Passport' type='file' />
         </div>
       </div>
     </section>

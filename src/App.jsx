@@ -8,11 +8,11 @@ import { FirstSitting } from "./pages/FirstSitting";
 import { PaymentPage } from "./pages/PaymentPage";
 import { ReviewPage } from "./pages/ReviewPage";
 import {WaecResultUpload} from "./pages/WaecResultUpload";
-import ChangeOfCourseInstitution from "./pages/ChangeOfCourseInstitution";
-import AdmissionStatus from "./pages/AdmissionStatus";
-import JambAdmissionLetter from "./pages/JambAdmissionLetter";
-import JambOriginalResult from "./pages/JambOriginalResult";
-import AgeDeclarationBirthCertificate from "./pages/AgeDeclarationBirthCertificate";
+import {ChangeOfCourseInstitution} from "./pages/ChangeOfCourseInstitution";
+import {AdmissionStatus} from "./pages/AdmissionStatus";
+import {JambAdmissionLetter} from "./pages/JambAdmissionLetter";
+import {JambOriginalResult} from "./pages/JambOriginalResult";
+import {AgeDeclarationBirthCertificate} from "./pages/AgeDeclarationBirthCertificate";
 import LocalGovernmentIdentificationLetter from "./pages/LocalGovernmentIdentificationLetter";
 
 const router = createBrowserRouter([
