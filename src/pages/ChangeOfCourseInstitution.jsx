@@ -1,13 +1,58 @@
-import { Link } from "react-router-dom";
+import { Caution } from "../components/Caution";
+import { FormButton } from "../components/FormButton";
+import { FormInput } from "../components/FormInput";
 
-export default function ChangeOfCourseInstitution() {
+export function ChangeOfCourseInstitution() {
   return (
-    <section className="page-content">
-      <h1>Change of Course/Institution</h1>
-      <p>Submit your request for a change of course or institution here.</p>
-      <Link className="secondary-btn" to="/">
-        Back to Home
-      </Link>
-    </section>
+    <>
+      <section className="card">
+        <p className="card-title">Naija Campus Hub</p>
+      </section>
+      <section className="card">
+        <h1 className="result-heading">Change of Institution/Course</h1>
+        <Caution>
+          <ul>
+            <li>Fill all your details correctly.</li>
+            <li>
+              Note that you are to change only your first choice, other choices
+              does not matter.
+            </li>
+            <li>
+              After you fill your details, Make payment and you will be contacted within an
+              hour
+            </li>
+          </ul>
+        </Caution>
+        <div className="result">
+          <form action="">
+            <div className="form-actions">
+              <FormInput
+                title="JAMB Registration Number"
+                inputType="input"
+                placeholder="Enter you Jamb Registration Number"
+              />
+              <FormInput
+                title="Full Name"
+                inputType="input"
+                placeholder="Enter your full name"
+              />
+              <FormInput
+                title="Email Address"
+                inputType="input"
+                placeholder="Enter a working email address"
+              />
+              <FormInput
+                title="Phone Number"
+                inputType="input"
+                placeholder="Enter your phone number or whatsApp"
+              />
+              <FormInput title="Institution (First Choice)"  />
+              <FormInput title="Course (First Choice)" />
+            </div>
+            <FormButton title="Next: Payment Page" type="submit" />
+          </form>
+        </div>
+      </section>
+    </>
   );
 }
