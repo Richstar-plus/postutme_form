@@ -7,7 +7,7 @@ const navLinks = [
   { name: "Post UTME Registration", path: "/" },
   { name: "Waec Result Upload", path: "/waec-result-upload" },
   { name: "Change of Course/Institution", path: "/change-course-institution" },
-  { name: "Admission Status", path: "/admission-status" },
+  { name: "Check Jamb Admission Status", path: "/admission-status" },
   { name: "Jamb Admission Letter", path: "/jamb-admission-letter" },
   { name: "Jamb Original Result", path: "/jamb-original-result" },
   {
