@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPerson } from "@fortawesome/free-solid-svg-icons";
 import { FormInput } from "./FormInput";
+import { lgas } from "./SelectOptions";
+
 export function PersonalInfo() {
+  const [twoResults, setTwoResults] = useState("");
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedLga, setSelectedLga] = useState("");
+
   return (
     <section className="card">
       <div className="form-container">
@@ -57,19 +64,34 @@ export function PersonalInfo() {
           <FormInput
             title="Are you using two O'level Results?"
             select="sitting"
+            value={twoResults}
+            onChange={(e) => setTwoResults(e.target.value)}
           />
-          <FormInput
-            title="O'Level"
-            placeholder="Enter your Qualification"
-            type="text"
-            select="olevel"
-          />
+
+          {twoResults !== "No" && (
+            <FormInput
+              title="O'Level"
+              placeholder="Enter your Qualification"
+              type="text"
+              select="olevel"
+            />
+          )}
           <FormInput
             title="State of Origin"
-            placeholder="Enter your State of Origin"
-            type="text"
+            select="states"
+            value={selectedState}
+            onChange={(e) => {
+              setSelectedState(e.target.value);
+              setSelectedLga("");
+            }}
           />
-          <FormInput title="L.G.A" placeholder="Enter your L.G.A" type="text" />
+          <FormInput
+            title="L.G.A"
+            select="lga"
+            options={lgas[selectedState] || []}
+            value={selectedLga}
+            onChange={(e) => setSelectedLga(e.target.value)}
+          />
           <FormInput
             title="House Address"
             placeholder="Enter your House Address"

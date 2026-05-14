@@ -4,9 +4,19 @@ import {
   sitting,
   gender,
   olevel,
+  states,
 } from "./SelectOptions";
 
-export function FormInput({ title, placeholder, type, inputType, select }) {
+export function FormInput({
+  title,
+  placeholder,
+  type,
+  inputType,
+  select,
+  value,
+  onChange,
+  options = [],
+}) {
   const currentYear = new Date().getFullYear();
   const years = Array.from(
     { length: currentYear - 1980 + 1 },
@@ -47,13 +57,22 @@ export function FormInput({ title, placeholder, type, inputType, select }) {
       ) : type === "file" ? (
         <input type="file" className="fileInput" />
       ) : (
-        <select name={title}>
+        <select name={title} value={value} onChange={onChange}>
           {select === "institution" ? (
             <>
               <option value="">Select University</option>
               {universities.map((university) => (
                 <option key={university} value={university}>
                   {university}
+                </option>
+              ))}
+            </>
+          ) : select === "gender" ? (
+            <>
+              <option value="">Select</option>
+              {gender.map((info) => (
+                <option key={info} value={info}>
+                  {info}
                 </option>
               ))}
             </>
@@ -66,12 +85,30 @@ export function FormInput({ title, placeholder, type, inputType, select }) {
                 </option>
               ))}
             </>
-          ) : select === "gender" ? (
+          ) : select === "olevel" ? (
             <>
               <option value="">Select</option>
-              {gender.map((info) => (
+              {olevel.map((info) => (
                 <option key={info} value={info}>
                   {info}
+                </option>
+              ))}
+            </>
+          ) : select === "states" ? (
+            <>
+              <option value="">Select</option>
+              {states.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) : select === "lga" ? (
+            <>
+              <option value="">Select L.G.A</option>
+              {options.map((lga) => (
+                <option key={lga} value={lga}>
+                  {lga}
                 </option>
               ))}
             </>
