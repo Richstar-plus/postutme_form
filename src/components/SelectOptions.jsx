@@ -18,6 +18,8 @@ export const gender = ["Male", "Female"];
 export const olevel = ["WAEC & NECO", "WAEC & WAEC", "NECO & NECO"];
 export const maritalStatus = ["Single", "Married"];
 export const noOfSitting = ["1 Sitting", "2 Sitting"];
+export const parent = ["Father", "Mother"];
+export const religion = ["Christianity", "Islam"];
 
 export const states = [
   "Abia",

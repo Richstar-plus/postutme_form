@@ -7,6 +7,8 @@ import {
   states,
   maritalStatus,
   noOfSitting,
+  parent,
+  religion
 } from "./SelectOptions";
 
 
@@ -124,6 +126,24 @@ export function FormInput({
                 </option>
               ))}
             </>
+          ) : select === "statesOfBirth" ? (
+            <>
+              <option value="">Select</option>
+              {states.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) : select === "lgaOfBirth" ? (
+            <>
+              <option value="">Select L.G.A</option>
+              {options.map((lga) => (
+                <option key={lga} value={lga}>
+                  {lga}
+                </option>
+              ))}
+            </>
           ) : select === "maritalStatus" ? (
             <>
               <option value="">Select</option>
@@ -137,6 +157,24 @@ export function FormInput({
             <>
               <option value="">Select</option>
               {noOfSitting.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) : select === "religion" ? (
+            <>
+              <option value="">Select</option>
+              {religion.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) : select === "parent" ? (
+            <>
+              <option value="">Select</option>
+              {parent.map((info) => (
                 <option key={info} value={info}>
                   {info}
                 </option>
