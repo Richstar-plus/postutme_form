@@ -16,7 +16,8 @@ export const monthNames = [
 export const sitting = ["Yes", "No"];
 export const gender = ["Male", "Female"];
 export const olevel = ["WAEC & NECO", "WAEC & WAEC", "NECO & NECO"];
-export const maritalStatus = ['Single', 'Married']
+export const maritalStatus = ["Single", "Married"];
+export const noOfSitting = ["1 Sitting", "2 Sitting"];
 
 export const states = [
   "Abia",
@@ -510,7 +511,7 @@ export const lgas = {
     "Owerri West",
     "Unuimo",
   ],
-    Jigawa: [
+  Jigawa: [
     "Auyo",
     "Babura",
     "Biriniwa",

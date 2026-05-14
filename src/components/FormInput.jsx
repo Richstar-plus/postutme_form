@@ -6,6 +6,7 @@ import {
   olevel,
   states,
   maritalStatus,
+  noOfSitting,
 } from "./SelectOptions";
 
 export function FormInput({
@@ -117,6 +118,15 @@ export function FormInput({
             <>
               <option value="">Select</option>
               {maritalStatus.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) : select === "noOfSitting" ? (
+            <>
+              <option value="">Select</option>
+              {noOfSitting.map((info) => (
                 <option key={info} value={info}>
                   {info}
                 </option>
