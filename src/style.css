@@ -809,6 +809,31 @@ body.menu-open .app-main {
     width: 100%;
   }
 
+  .passport-preview {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background: rgba(4, 22, 73, 0.05);
+    text-align: center;
+  }
+
+  .passport-preview h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .passport-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+  }
+
   .form-input input:focus,
   .form-input select:focus {
     outline: 1px solid var(--accent-color);

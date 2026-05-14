@@ -56,7 +56,7 @@ export function FormInput({
       ) : inputType === "input" ? (
         <input type={type} placeholder={placeholder} />
       ) : type === "file" ? (
-        <input type="file" className="fileInput" />
+        <input type="file" className="fileInput" onChange={onChange} />
       ) : (
         <select name={title} value={value} onChange={onChange}>
           {select === "institution" ? (
