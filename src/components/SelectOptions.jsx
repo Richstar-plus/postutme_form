@@ -16,6 +16,7 @@ export const monthNames = [
 export const sitting = ["Yes", "No"];
 export const gender = ["Male", "Female"];
 export const olevel = ["WAEC & NECO", "WAEC & WAEC", "NECO & NECO"];
+export const maritalStatus = ['Single', 'Married']
 
 export const states = [
   "Abia",

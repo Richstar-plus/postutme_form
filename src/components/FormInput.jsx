@@ -5,6 +5,7 @@ import {
   gender,
   olevel,
   states,
+  maritalStatus,
 } from "./SelectOptions";
 
 export function FormInput({
@@ -109,6 +110,15 @@ export function FormInput({
               {options.map((lga) => (
                 <option key={lga} value={lga}>
                   {lga}
+                </option>
+              ))}
+            </>
+          ) : select === "maritalStatus" ? (
+            <>
+              <option value="">Select</option>
+              {maritalStatus.map((info) => (
+                <option key={info} value={info}>
+                  {info}
                 </option>
               ))}
             </>

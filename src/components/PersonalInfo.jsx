@@ -98,7 +98,7 @@ export function PersonalInfo() {
             type="text"
             inputType="input"
           />
-          <FormInput title="Marital Status" />
+          <FormInput title="Marital Status" select='maritalStatus' />
           <FormInput
             title="Place of Birth"
             placeholder="Enter your Place of Birth"
