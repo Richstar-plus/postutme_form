@@ -88,16 +88,9 @@ export function FirstSitting() {
               </div>
             )}
 
-            <FormButton
-              title="Previous Page"
-              action="previous"
-              type="button"
-            />
+            <FormButton title="Previous Page" action="previous" type="button" />
 
-            <FormButton
-              title="Next: Payment Page"
-              type="submit"
-            />
+            <FormButton title="Next: Payment Page" type="submit" />
           </form>
         </div>
       </section>
