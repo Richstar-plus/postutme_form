@@ -54,7 +54,7 @@ export function Header() {
       <div className="site-header">
         <div className="logo">
           <FontAwesomeIcon icon={faHouse} className="logo-icon" />
-          <h1>Post-UTME Portal</h1>
+          <h1>Naija Campus Hub</h1>
         </div>
         <nav>
           <div className="hamburger">

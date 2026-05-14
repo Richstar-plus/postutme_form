@@ -7,7 +7,7 @@ export function PaymentPage() {
   return (
     <>
       <section className="card">
-        <p className="card-title">Naija Campus Hub</p>
+        <p className="card-title">richstar Online Services</p>
       </section>
       <FormProgress currentStep={4} />
       <section className="card">

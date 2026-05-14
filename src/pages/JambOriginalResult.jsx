@@ -6,7 +6,7 @@ export function JambOriginalResult() {
   return (
     <>
       <section className="card">
-        <p className="card-title">Naija Campus Hub</p>
+        <p className="card-title">richstar Online Services</p>
       </section>
       <section className="card">
         <h1 className="result-heading">JAMB Original Result.</h1>

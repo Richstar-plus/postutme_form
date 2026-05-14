@@ -17,7 +17,7 @@ function HomePage() {
   return (
     <>
       <section className="card">
-        <p className="card-title">Naija Campus Hub</p>
+        <p className="card-title">richstar Online Services</p>
         <h2 className="card-heading">
           Secure Your Academic Future with Naija Campus Hub - Your Ultimate
           Post-UTME/Screening Companion!

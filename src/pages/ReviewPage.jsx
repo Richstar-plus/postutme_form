@@ -38,7 +38,7 @@ export function ReviewPage() {
   return (
     <>
       <section className="card">
-        <p className="card-title">Naija Campus Hub</p>
+        <p className="card-title">richstar Online Services</p>
       </section>
       <FormProgress currentStep={3} />
       <section className="card review-grid">

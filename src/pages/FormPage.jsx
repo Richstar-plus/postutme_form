@@ -10,7 +10,7 @@ export function FormPage() {
     <div className="form">
       <form action="">
         <section className="card">
-          <p className="card-title">Naija Campus Hub</p>
+          <p className="card-title">richstar Online Services</p>
         </section>
         <FormProgress currentStep={1} />
         <PersonalInfo />

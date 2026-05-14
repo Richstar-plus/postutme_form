@@ -25,7 +25,7 @@ export function WaecResultUpload() {
   return (
     <>
       <section className="card">
-        <p className="card-title">Naija Campus Hub</p>
+        <p className="card-title">richstar Online Services</p>
       </section>
 
       <section className="card">
