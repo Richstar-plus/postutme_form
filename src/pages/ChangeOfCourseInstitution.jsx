@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Caution } from "../components/Caution";
 import { FormButton } from "../components/FormButton";
 import { FormInput } from "../components/FormInput";
+import { AllCourses } from "../components/AllSchoolCourses";
 
 export function ChangeOfCourseInstitution() {
+  const [selectedUniversity, setSelectedUniversity] = useState("");
+  const [selectedCourse, setSelectedCourse] = useState("");
   return (
     <>
       <section className="card">
@@ -18,8 +22,8 @@ export function ChangeOfCourseInstitution() {
               does not matter.
             </li>
             <li>
-              After you fill your details, Make payment and you will be contacted within an
-              hour
+              After you fill your details, Make payment and you will be
+              contacted within an hour
             </li>
           </ul>
         </Caution>
@@ -46,8 +50,22 @@ export function ChangeOfCourseInstitution() {
                 inputType="input"
                 placeholder="Enter your phone number or whatsApp"
               />
-              <FormInput title="Institution (First Choice)"  />
-              <FormInput title="Course (First Choice)" />
+              <FormInput
+                title="Institution (First Choice)"
+                select="institution"
+                value={selectedUniversity}
+                onChange={(e) => {
+                  setSelectedUniversity(e.target.value);
+                  setSelectedCourse("");
+                }}
+              />
+              <FormInput
+                title="Course (First Choice)"
+                select="courses"
+                options={AllCourses[selectedUniversity] || []}
+                value={selectedCourse}
+                onChange={(e) => setSelectedCourse(e.target.value)}
+              />
             </div>
             <FormButton title="Next: Payment Page" type="submit" />
           </form>

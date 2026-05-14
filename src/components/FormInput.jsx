@@ -9,6 +9,7 @@ import {
   noOfSitting,
 } from "./SelectOptions";
 
+
 export function FormInput({
   title,
   placeholder,
@@ -69,7 +70,16 @@ export function FormInput({
                 </option>
               ))}
             </>
-          ) : select === "gender" ? (
+          ) : select === "courses" ? (
+            <>
+              <option value="">Select Course</option>
+              {options.map((info) => (
+                <option key={info} value={info}>
+                  {info}
+                </option>
+              ))}
+            </>
+          ) :select === "gender" ? (
             <>
               <option value="">Select</option>
               {gender.map((info) => (

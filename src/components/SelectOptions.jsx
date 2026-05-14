@@ -93,6 +93,7 @@ export const universities = [
   "Federal University of Technology Akure",
   "Federal University of Technology Minna",
   "Federal University of Technology Owerri",
+  "Federal Univerity of Environment and Technology (FUET) Koroma",
   "Federal University Otuoke",
   "Federal University Oye-Ekiti",
   "Federal University Wukari",
