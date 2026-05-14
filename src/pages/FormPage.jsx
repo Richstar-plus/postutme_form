@@ -12,6 +12,9 @@ export function FormPage() {
         <section className="card">
           <p className="card-title">richstar Online Services</p>
         </section>
+        <section className="card">
+          <h1 className="result-heading">POST UTME Portal.</h1>
+        </section>
         <FormProgress currentStep={1} />
         <PersonalInfo />
         <Ads />
