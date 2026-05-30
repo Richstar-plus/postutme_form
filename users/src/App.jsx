@@ -14,6 +14,7 @@ import {JambAdmissionLetter} from "./pages/JambAdmissionLetter";
 import {JambOriginalResult} from "./pages/JambOriginalResult";
 import {AgeDeclarationBirthCertificate} from "./pages/AgeDeclarationBirthCertificate";
 import LocalGovernmentIdentificationLetter from "./pages/LocalGovernmentIdentificationLetter";
+import { AdminHomePage } from "./admin/pages/AdminHomePage";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <HomePage />,
+      },
+      {
+        path: "/admin",
+        element: <AdminHomePage />
       },
       {
         path: "waec-result-upload",
