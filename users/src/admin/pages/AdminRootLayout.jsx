@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-export function FormRootLayout() {
+export function AdminRootLayout() {
   // const navigation = useNavigation();
   return (
     <>
