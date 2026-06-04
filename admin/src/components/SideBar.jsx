@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function SideBar() {
   return (
@@ -15,8 +15,17 @@ export function SideBar() {
       </div>
       <nav className="nav-menu">
         <div className="nav-menu-item">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/" className="nav-link active">
             Dashboard
+          </NavLink>
+        </div>
+
+        <div className="nav-menu-item">
+          <h4>Management</h4>
+          <NavLink to="/" className="nav-link">
+            <p>
+              Applications <span>123</span>
+            </p>
           </NavLink>
         </div>
       </nav>
