@@ -1,6 +1,7 @@
 # PostUTME Application - Restructuring Guide
 
 ## Overview
+
 The admin and users applications have been unified into a single application running from the `users` folder. Both admin and user interfaces are now accessible through clean, professional routes.
 
 ## New Structure
@@ -41,6 +42,7 @@ users/
 ## Routing Structure
 
 ### User Routes
+
 - `/` - Home page with registration options
 - `/post-utme` - Post-UTME registration form
 - `/post-utme/payment` - Payment page
@@ -54,23 +56,28 @@ users/
 - `/local-government-identification-letter` - Upload identification
 
 ### Admin Routes
+
 - `/admin` - Admin dashboard home
 - `/admin/*` - All admin routes start with `/admin` prefix
 
 ## Running the Application
 
 ### Install Dependencies
+
 From the `users` folder:
+
 ```bash
 npm install
 ```
 
 ### Development Server
+
 ```bash
 npm run dev
 ```
 
 ### Production Build
+
 ```bash
 npm run build
 ```
@@ -80,7 +87,7 @@ npm run build
 1. **Single Entry Point**: Now only run the `users` application
 2. **Admin Module**: Located at `src/admin/` with its own components and styling
 3. **Navigation**: Header now includes a link to `/admin` panel
-4. **Styling**: 
+4. **Styling**:
    - User styles: `src/style.css`
    - Admin styles: `src/admin/App.css`
    - Both use the same color scheme for consistency
@@ -89,6 +96,7 @@ npm run build
 ## Import Paths
 
 ### Admin Components
+
 ```javascript
 // Import admin layout
 import { AdminRoot } from "./admin/pages/Root";
@@ -99,6 +107,7 @@ import { SideBar } from "./admin/components/SideBar";
 ```
 
 ### User Components
+
 ```javascript
 // Import user layout
 import { RootLayout } from "./pages/Root";
@@ -108,6 +117,7 @@ import HomePage from "./pages/HomePage";
 ## Styling Consistency
 
 Both admin and user interfaces use the same color scheme:
+
 - **Primary Color**: `#1a4ace` (admin) / `#041649` (user) - Professional blue
 - **Secondary Color**: `#010f2e` - Dark navy
 - **Accent Color**: `#c48807` - Gold
@@ -116,6 +126,7 @@ Both admin and user interfaces use the same color scheme:
 ## Asset Management
 
 ### Admin Assets
+
 - Store admin assets in `src/admin/assets/`
 - Example: Logo is at `src/admin/assets/logo.png`
 - Import relative to the admin component file:
@@ -124,12 +135,14 @@ Both admin and user interfaces use the same color scheme:
   ```
 
 ### User Assets
+
 - Store user assets in `src/images/`
 - Import with relative paths or absolute paths
 
 ## Accessing the Application
 
 After running `npm run dev`:
+
 - **User App**: `http://localhost:5173/`
 - **Admin App**: `http://localhost:5173/admin`
 - **Navigation**: Click "Admin Panel" in the header to switch between apps

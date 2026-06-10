@@ -62,6 +62,7 @@ Update `src/admin/components/SideBar.jsx`:
 ## Route Naming Convention
 
 All admin routes follow the pattern:
+
 - `/admin` - Dashboard
 - `/admin/users` - Users Management
 - `/admin/applications` - Applications Review
@@ -69,6 +70,7 @@ All admin routes follow the pattern:
 - `/admin/reports` - Reports
 
 Use kebab-case (hyphens) for multi-word routes:
+
 - ✅ `/admin/user-management`
 - ❌ `/admin/userManagement`
 
@@ -133,7 +135,7 @@ export function UserTable({ users }) {
         </tr>
       </thead>
       <tbody>
-        {users.map(user => (
+        {users.map((user) => (
           <tr key={user.id}>
             <td>{user.name}</td>
             <td>{user.email}</td>
@@ -199,7 +201,7 @@ import { useParams } from "react-router-dom";
 
 export function ApplicationDetail() {
   const { id } = useParams();
-  
+
   return (
     <section className="card">
       <h2>Application #{id}</h2>
@@ -217,19 +219,19 @@ Create a services folder for API calls:
 // src/admin/services/api.js
 export const adminAPI = {
   getUsers: async () => {
-    const response = await fetch('/api/admin/users');
+    const response = await fetch("/api/admin/users");
     return response.json();
   },
-  
+
   getApplications: async () => {
-    const response = await fetch('/api/admin/applications');
+    const response = await fetch("/api/admin/applications");
     return response.json();
   },
-  
+
   updateApplication: async (id, data) => {
     const response = await fetch(`/api/admin/applications/${id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
     return response.json();
@@ -248,11 +250,10 @@ export function ApplicationsList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    adminAPI.getApplications()
-      .then(data => {
-        setApplications(data);
-        setLoading(false);
-      });
+    adminAPI.getApplications().then((data) => {
+      setApplications(data);
+      setLoading(false);
+    });
   }, []);
 
   if (loading) return <p>Loading...</p>;
@@ -307,7 +308,7 @@ src/admin/
 ```javascript
 function ProtectedAdminRoute({ element }) {
   const isAdmin = localStorage.getItem('isAdmin') === 'true';
-  
+
   return isAdmin ? element : <Navigate to="/admin/unauthorized" />;
 }
 
@@ -325,8 +326,8 @@ import { useLocation } from "react-router-dom";
 
 function BreadCrumb() {
   const location = useLocation();
-  const paths = location.pathname.split('/').filter(Boolean);
-  
+  const paths = location.pathname.split("/").filter(Boolean);
+
   return (
     <nav className="breadcrumb">
       {paths.map((path, index) => (
