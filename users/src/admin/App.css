@@ -1,0 +1,141 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+:root {
+  --admin-primary-color: #1a4ace;
+  --admin-secondary-color: #010f2e;
+  --admin-accent-color: #c48807;
+  --admin-background-color: #bbccfa4b;
+  --admin-header-menu-height: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--admin-background-color);
+}
+
+.admin-app-sidebar {
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+.admin-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.admin-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.admin-title {
+  font-size: 10px;
+  font-weight: bolder;
+  color: var(--admin-primary-color);
+  text-align: center;
+}
+
+.admin-logo-container .admin-title h3 {
+  margin: 0 0 3px 0;
+}
+
+.admin-logo-container .admin-title p {
+  color: var(--admin-accent-color);
+}
+
+.admin-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.admin-nav-link {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: var(--admin-primary-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.admin-nav-link:hover {
+  background-color: var(--admin-background-color);
+  color: var(--admin-primary-color);
+}
+
+.admin-nav-link.active {
+  background-color: var(--admin-primary-color);
+  color: white;
+  box-shadow: 0 4px 12px rgba(4, 22, 73, 0.2);
+}
+
+.admin-app-main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.admin-app-main header {
+  margin-bottom: 20px;
+}
+
+.admin-app-main header h2 {
+  color: var(--primary-color);
+}
+
+.admin-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+button {
+  background-color: var(--admin-primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--admin-secondary-color);
+}

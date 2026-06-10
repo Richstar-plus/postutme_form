@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// User routes
 import { RootLayout } from "./pages/Root";
 import HomePage from "./pages/HomePage";
 import { FormPage } from "./pages/FormPage";
@@ -7,15 +8,21 @@ import { FormRootLayout } from "./pages/FormRootLayout";
 import { FirstSitting } from "./pages/FirstSitting";
 import { PaymentPage } from "./pages/PaymentPage";
 import { ReviewPage } from "./pages/ReviewPage";
-import {WaecResultUpload} from "./pages/WaecResultUpload";
-import {ChangeOfCourseInstitution} from "./pages/ChangeOfCourseInstitution";
-import {AdmissionStatus} from "./pages/AdmissionStatus";
-import {JambAdmissionLetter} from "./pages/JambAdmissionLetter";
-import {JambOriginalResult} from "./pages/JambOriginalResult";
-import {AgeDeclarationBirthCertificate} from "./pages/AgeDeclarationBirthCertificate";
+import { WaecResultUpload } from "./pages/WaecResultUpload";
+import { ChangeOfCourseInstitution } from "./pages/ChangeOfCourseInstitution";
+import { AdmissionStatus } from "./pages/AdmissionStatus";
+import { JambAdmissionLetter } from "./pages/JambAdmissionLetter";
+import { JambOriginalResult } from "./pages/JambOriginalResult";
+import { AgeDeclarationBirthCertificate } from "./pages/AgeDeclarationBirthCertificate";
 import LocalGovernmentIdentificationLetter from "./pages/LocalGovernmentIdentificationLetter";
 
+// Admin routes
+import { AdminRoot } from "./admin/pages/Root";
+import { AdminHome } from "./admin/pages/HomePage";
+import AdminErrorPage from "./admin/pages/ErrorPage";
+
 const router = createBrowserRouter([
+  // User routes
   {
     path: "/",
     element: <RootLayout />,
@@ -75,6 +82,19 @@ const router = createBrowserRouter([
             element: <FirstSitting />,
           },
         ],
+      },
+    ],
+  },
+
+  // Admin routes
+  {
+    path: "/admin",
+    element: <AdminRoot />,
+    errorElement: <AdminErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <AdminHome />,
       },
     ],
   },
