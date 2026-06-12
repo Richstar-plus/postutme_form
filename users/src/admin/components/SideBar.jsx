@@ -22,7 +22,7 @@ export function SideBar() {
 
         <div className="admin-nav-menu-item">
           <h4>Management</h4>
-          <NavLink to="/admin" className="admin-nav-link">
+          <NavLink to="/admin/applications" className="admin-nav-link">
             <p>
               Applications <span>123</span>
             </p>

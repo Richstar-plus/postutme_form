@@ -7,9 +7,9 @@ export function AdminRoot() {
     <div className="admin-container">
       <SideBar />
       <main className="admin-app-main">
-        <header>
+        <div className="admin-app-header">
           <h2>Dashboard</h2>
-        </header>
+        </div>
         <Outlet />
       </main>
     </div>
