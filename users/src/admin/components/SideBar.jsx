@@ -1,5 +1,18 @@
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import { NavigationLink } from "./NavigationLink";
+import {
+  faFileAlt,
+  faGaugeHigh,
+  faCreditCard,
+  faUsers,
+  faBriefcase,
+  faSchool,
+  faMoneyBillTransfer,
+  faBell,
+  faChartBar,
+  faGear,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function SideBar() {
   return (
@@ -15,18 +28,97 @@ export function SideBar() {
       </div>
       <nav className="admin-nav-menu">
         <div className="admin-nav-menu-item">
-          <NavLink to="/admin" className="admin-nav-link">
-            Dashboard
-          </NavLink>
+          <NavigationLink
+            to="/admin"
+            className="admin-nav-link"
+            icon={faGaugeHigh}
+            label="Dashboard"
+          />
         </div>
 
         <div className="admin-nav-menu-item">
           <h4>Management</h4>
-          <NavLink to="/admin/applications" className="admin-nav-link">
-            <p>
-              Applications <span>123</span>
-            </p>
-          </NavLink>
+          <NavigationLink
+            to="/admin/applications"
+            className="admin-nav-link"
+            icon={faFileAlt}
+            label="Applications"
+            extra="123"
+          />
+
+          <NavigationLink
+            to="/admin/payments"
+            className="admin-nav-link"
+            icon={faCreditCard}
+            label="Payments"
+            extra="45"
+          />
+
+          <NavigationLink
+            to="/admin/users"
+            className="admin-nav-link"
+            icon={faUsers}
+            label="Users"
+            extra="67"
+          />
+
+          <NavigationLink
+            to="/admin/services"
+            className="admin-nav-link"
+            icon={faBriefcase}
+            label="Services"
+          />
+
+          <NavigationLink
+            to="/admin/schools"
+            className="admin-nav-link"
+            icon={faSchool}
+            label="Schools"
+          />
+
+          <NavigationLink
+            to="/admin/schools"
+            className="admin-nav-link"
+            icon={faSchool}
+            label="Schools"
+            extra="89"
+          />
+        </div>
+
+        <div className="admin-nav-menu-item">
+          <h4>Others</h4>
+          <NavigationLink
+            to="/admin/transactions"
+            className="admin-nav-link"
+            icon={faMoneyBillTransfer}
+            label="Transactions"
+          />
+
+          <NavigationLink
+            to="/admin/notifications"
+            className="admin-nav-link"
+            icon={faBell}
+            label="Notifications"
+            extra="3"
+          />
+
+          <NavigationLink
+            to="/admin/reports"
+            className="admin-nav-link"
+            icon={faChartBar}
+            label="Reports"
+          />
+
+          <NavigationLink
+            to="/admin/settings"
+            className="admin-nav-link"
+            icon={faGear}
+            label="Settings"
+          />
+        </div>
+
+        <div className="admin-nav-menu-item admin-logout">
+          <NavigationLink to="/admin/logout" className="admin-nav-link" label="Logout" />
         </div>
       </nav>
     </div>

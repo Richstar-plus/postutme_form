@@ -23,6 +23,7 @@
 
 .admin-app-sidebar {
   width: 200px;
+  height: 110vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -68,18 +69,38 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .admin-nav-link {
-  display: block;
-  padding: 12px 14px;
+  margin: 0 10px;
+  display: flex;
+  padding: 12px ;
   border-radius: 10px;
-  color: var(--admin-primary-color);
+  color: rgb(68, 62, 62);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   transition: 0.3s ease;
+}
+
+.admin-nav-link .admin-nav-link-p{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.admin-nav-link-icon {
+  margin-right: 15px;
+}
+
+.admin-nav-link-extra {
+  background-color: var(--admin-background-color);
+  color: var(--admin-primary-color);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 700;
 }
 
 .admin-nav-link:hover {
@@ -139,5 +160,12 @@ button:hover {
 }
 
 .admin-nav-menu-item h4 {
-  marg
+  margin: 15px 0;
+  font-size: 12px;
+  padding-left: 10px;
+  color: grey;
+}
+
+.admin-logout {
+  margin-top: 20px;
 }
