@@ -12,6 +12,7 @@ import {
   faBell,
   faChartBar,
   faGear,
+  faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
 export function SideBar() {
@@ -118,7 +119,13 @@ export function SideBar() {
         </div>
 
         <div className="admin-nav-menu-item admin-logout">
-          <NavigationLink to="/admin/logout" className="admin-nav-link" label="Logout" />
+          <NavigationLink
+            to="/admin/logout"
+            className="admin-nav-link"
+            icon={faRightFromBracket}
+            label="Logout"
+            logout
+          />
         </div>
       </nav>
     </div>

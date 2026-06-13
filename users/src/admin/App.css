@@ -12,7 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: sans-serif;
 }
 
 .admin-container {
@@ -23,7 +23,7 @@
 
 .admin-app-sidebar {
   width: 200px;
-  height: 110vh;
+  height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 10px;
 }
 
 .admin-nav-link {
@@ -79,9 +78,20 @@
   border-radius: 10px;
   color: rgb(68, 62, 62);
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   transition: 0.3s ease;
+}
+
+.admin-logout {
+  background-color: rgba(255, 0, 0, 0.062);
+  border-radius: 10px;
+  color: rgb(184, 45, 45);
+}
+
+.admin-logout:hover {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  color: rgb(184, 45, 45) !important;
 }
 
 .admin-nav-link .admin-nav-link-p{
@@ -160,12 +170,9 @@ button:hover {
 }
 
 .admin-nav-menu-item h4 {
-  margin: 15px 0;
-  font-size: 12px;
+  margin: 2px 0;
+  font-size: 10px;
   padding-left: 10px;
   color: grey;
 }
 
-.admin-logout {
-  margin-top: 20px;
-}
