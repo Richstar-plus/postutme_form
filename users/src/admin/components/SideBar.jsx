@@ -76,14 +76,6 @@ export function SideBar() {
             icon={faSchool}
             label="Schools"
           />
-
-          <NavigationLink
-            to="/admin/schools"
-            className="admin-nav-link"
-            icon={faSchool}
-            label="Schools"
-            extra="89"
-          />
         </div>
 
         <div className="admin-nav-menu-item">

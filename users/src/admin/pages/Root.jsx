@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { SideBar } from "../components/SideBar";
+import { Header } from "../components/Header";
 import "../App.css";
 
 export function AdminRoot() {
@@ -7,9 +8,7 @@ export function AdminRoot() {
     <div className="admin-container">
       <SideBar />
       <main className="admin-app-main">
-        <div className="admin-app-header">
-          <h2>Dashboard</h2>
-        </div>
+        <Header />  
         <Outlet />
       </main>
     </div>
