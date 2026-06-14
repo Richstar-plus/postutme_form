@@ -41,7 +41,9 @@ export function AdminHome() {
         </div>
       </section>
       <section className="admin-card">
-        <ApplicationsChart />
+        <div className="charts-holder">
+          <ApplicationsChart />
+        </div>
       </section>
     </>
   );

@@ -340,3 +340,8 @@
   font-weight: 700;
 }
 
+.charts-holder {
+  display: flex;
+  gap: 20px;
+}
+
