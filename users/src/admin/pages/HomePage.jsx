@@ -6,6 +6,7 @@ import {
   faCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import ApplicationsChart from "../components/ApplicationsChart";
+import { ApplicationCard } from "../components/ApplicationsCard";
 export function AdminHome() {
   return (
     <>
@@ -43,6 +44,7 @@ export function AdminHome() {
       <section className="admin-card">
         <div className="charts-holder">
           <ApplicationsChart />
+          <ApplicationCard />
         </div>
       </section>
     </>
